@@ -1,0 +1,22 @@
+[package]
+name = "my-server"
+version = "0.1.0"
+authors = ["circumspect <40770208+circumspect@users.noreply.github.com>"]
+edition = "2018"
+
+[lib]
+name = "my_server"
+path = "src/lib.rs"
+
+[[bin]]
+name = "example-server"
+path = "src/bin/main.rs"
+
+[dependencies]
+futures = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["full"] }
+tokio-serde = { version = "0.8", features = ["json"] }
+tokio-util = { version = "0.6", features = ["codec"] }
+uuid = { version = "0.8", features = ["serde", "v4"] }

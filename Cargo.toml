@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+  "my-server",
+  "my-client",
+]
