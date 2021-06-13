@@ -1,7 +1,7 @@
 # Simple Tokio Server
 
 This is a basic example of a server and client written in pure Rust and
-communicating through an API defined by the server library using TCP. The
+communicating using TCP through an API defined by the server library. The
 network connections are handled using Tokio, and all messages between the
 server and the client are serialized using Serde before being sent. This
 particular example defines a chat server with a basic API consisting of
