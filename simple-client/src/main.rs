@@ -6,7 +6,7 @@ use tokio_util::codec::{FramedRead, FramedWrite, LengthDelimitedCodec};
 
 #[tokio::main]
 pub async fn main() {
-    let socket = TcpStream::connect("localhost:8080").await.unwrap();
+    let socket = TcpStream::connect("localhost:31194").await.unwrap();
 
     // Duplicate the socket: one for serializing and one for deserializing
     let socket = socket.into_std().unwrap();

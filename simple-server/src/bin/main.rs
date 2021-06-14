@@ -11,7 +11,7 @@ use tokio_util::codec::{FramedRead, FramedWrite, LengthDelimitedCodec};
 #[tokio::main]
 pub async fn main() {
     // Bind a server socket
-    let listener = TcpListener::bind("localhost:8080").await.unwrap();
+    let listener = TcpListener::bind("localhost:31194").await.unwrap();
     let (tx, _rx) = broadcast::channel::<(Value, SocketAddr)>(10);
     let mut user_count: usize = 0;
 
