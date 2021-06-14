@@ -1,4 +1,4 @@
-use my_server::api::{ClientMessage, ServerMessage};
+use simple_server::api::{ClientMessage, ServerMessage};
 use futures::prelude::*;
 use tokio::net::TcpStream;
 use tokio_serde::formats::*;

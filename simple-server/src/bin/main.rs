@@ -1,4 +1,4 @@
-use my_server::api::{ClientMessage, ServerMessage};
+use simple_server::api::{ClientMessage, ServerMessage};
 
 use std::net::SocketAddr;
 use futures::prelude::*;

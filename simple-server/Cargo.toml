@@ -1,13 +1,18 @@
 [package]
-name = "my-client"
+name = "simple-server"
 version = "0.1.0"
 authors = ["circumspect <40770208+circumspect@users.noreply.github.com>"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "simple_server"
+path = "src/lib.rs"
+
+[[bin]]
+name = "simple-server-bin"
+path = "src/bin/main.rs"
 
 [dependencies]
-my-server = { path = "../my-server/" }
 futures = "0.3"
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
